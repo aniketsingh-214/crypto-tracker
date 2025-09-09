@@ -14,7 +14,7 @@ export default function Home() {
     <section className="space-y-6">
       <div className="grid md:grid-cols-2 gap-6 items-center">
         <div className="space-y-3">
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Practice Crypto, Risk-Free</h1>
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Crypto Portfolio Tracker</h1>
           <p className="text-zinc-600 dark:text-zinc-300">
             Live prices. $10,000 mock USD. Buy/Sell BTC, ETH, USDT, USDC, XMR, SOL. Learn market rhythm without losing sleep.
           </p>

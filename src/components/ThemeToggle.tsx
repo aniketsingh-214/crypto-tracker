@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function ThemeToggle() {
   const [dark, setDark] = useState<boolean>(() => {
     const saved = localStorage.getItem("theme_dark_v1");
-    return saved ? JSON.parse(saved) : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return saved ? JSON.parse(saved) : window.matchMedia("(prefers-color-scheme: light)").matches;
   });
 
   useEffect(() => {
