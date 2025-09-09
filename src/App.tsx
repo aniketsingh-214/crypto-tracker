@@ -27,7 +27,6 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    // simple alert checks on every price change
     if (Object.keys(prices).length) checkAlerts(prices);
   }, [prices, alerts]);
 
@@ -73,7 +72,6 @@ export default function App() {
   );
 }
 
-// if already authed, avoid showing login/register
 function Gate({ element }: { element: JSX.Element }) {
   const { user } = useAuthStore();
   const location = useLocation();

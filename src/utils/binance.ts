@@ -1,6 +1,5 @@
 type CB = (price: number) => void;
 
-// symbol like "btcusdt"
 export function subscribeBinanceTrade(symbol: string, cb: CB): () => void {
   const ws = new WebSocket(`wss://stream.binance.com:9443/ws/${symbol}@trade`);
   ws.onmessage = (ev) => {
